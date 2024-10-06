@@ -16,4 +16,13 @@ export const styles = StyleSheet.create({
     color: '#6b6b6b',
     fontSize: 16,
   },
+  input: {
+    height: 56,
+    backgroundColor: '#1f1e25',
+    borderRadius: 4,
+    color: '#fafafa',
+    padding: 16,
+    marginTop: 36,
+    fontSize: 16,
+  },
 })
