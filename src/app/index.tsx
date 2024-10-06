@@ -1,28 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native'
+import Home from './home'
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.eventName}>Nome do evento</Text>
-      <Text style={styles.eventDate}>Sexta, 4 de Novembro de 2024</Text>
-    </View>
-  )
+  return <Home />
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#131016',
-    padding: 24,
-  },
-  eventName: {
-    color: '#fafafa',
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginTop: 48,
-  },
-  eventDate: {
-    color: '#6b6b6b',
-    fontSize: 16,
-  },
-})
