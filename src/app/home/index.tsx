@@ -1,5 +1,6 @@
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './styles'
+import { Participant } from '@/components/participant'
 
 export default function Home() {
   function handleAddParticipant() {
@@ -8,7 +9,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>Nome do evento</Text>
+      <Text style={styles.eventName}>Nome do Evento</Text>
 
       <Text style={styles.eventDate}>Sexta, 4 de Novembro de 2024</Text>
 
@@ -27,6 +28,13 @@ export default function Home() {
         >
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
+      </View>
+
+      {/* LISTA DE PARTICIPANTES */}
+      <View>
+        <Participant />
+        <Participant />
+        <Participant />
       </View>
     </View>
   )
