@@ -32,9 +32,10 @@ export default function Home() {
 
       {/* LISTA DE PARTICIPANTES */}
       <View>
-        <Participant />
-        <Participant />
-        <Participant />
+        <Participant name="Rodrigo" />
+        <Participant name="Diego" />
+        <Participant name="Vini" />
+        <Participant name="Pablo" />
       </View>
     </View>
   )
