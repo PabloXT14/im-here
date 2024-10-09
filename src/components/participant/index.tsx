@@ -3,13 +3,10 @@ import { styles } from './styles'
 
 type ParticipantProps = {
   name: string
+  onRemove: () => void
 }
 
-export const Participant = ({ name }: ParticipantProps) => {
-  function handleDeleteParticipant() {
-    console.log('Deletar participante')
-  }
-
+export const Participant = ({ name, onRemove }: ParticipantProps) => {
   return (
     <View style={styles.container}>
       <Text style={styles.name}>{name}</Text>
@@ -17,7 +14,7 @@ export const Participant = ({ name }: ParticipantProps) => {
       <TouchableOpacity
         style={styles.button}
         activeOpacity={0.7}
-        onPress={handleDeleteParticipant}
+        onPress={onRemove}
       >
         <Text style={styles.buttonText}>-</Text>
       </TouchableOpacity>
