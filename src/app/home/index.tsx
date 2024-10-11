@@ -8,20 +8,10 @@ import {
 } from 'react-native'
 import { styles } from './styles'
 import { Participant } from '@/components/participant'
+import { useState } from 'react'
 
 export default function Home() {
-  const participants = [
-    'Rodrigo',
-    'Diego',
-    'Vini',
-    'Bruno',
-    'Gustavo',
-    'Eduardo',
-    'Bruna',
-    'Giovanna',
-    'Felipe',
-    'Vitor',
-  ]
+  const [participants, setParticipants] = useState(['João'])
 
   function handleAddParticipant() {
     if (participants.includes('Rodrigo')) {
@@ -30,6 +20,8 @@ export default function Home() {
         'Ja existe um participante com esse nome'
       )
     }
+
+    setParticipants(prevState => [...prevState, 'Ana'])
   }
 
   function handleRemoveParticipant(name: string) {
